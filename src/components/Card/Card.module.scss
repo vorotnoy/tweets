@@ -1,0 +1,89 @@
+.wrapper {
+  position: relative;
+
+  width: 380px;
+  height: 460px;
+  border-radius: 20px;
+
+  background-color: #471ca9;
+
+  padding: 28px 0;
+}
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.bckgrd {
+  width: 308px;
+  height: 168px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 88px;
+}
+.middleline {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 380px;
+  height: 8px;
+
+  background-color: #ebd8ff;
+  box-shadow: 0px -1.7184642553329468px 3.4369285106658936px 0px #ae7be3 inset;
+}
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 8px solid #ebd8ff;
+}
+.avatar{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.tweets,
+.followers {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+
+  color: #ebd8ff;
+  text-transform: uppercase;
+}
+.tweets {
+  margin-bottom: 16px;
+}
+.followers {
+  margin-bottom: 28px;
+}
+.btn_nofollow {
+  width: 196px;
+  height: 50px;
+
+  padding: 14px 28px 14px 28p;
+  border-radius: 10.310786247253418px;
+  background-color: #ebd8ff;
+  border: none;
+
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
