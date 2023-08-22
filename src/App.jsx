@@ -1,10 +1,18 @@
 import "./App.css";
-import { Card } from "./components/CArd/Card";
+import { Navigate, Route, Routes } from "react-router-dom";
+import { HomePage } from "./pages/HomePage/HomePage";
+import { TweetsPage } from "./pages/TweetsPage/TweetsPage";
 
 function App() {
   return (
     <>
-      <Card />
+      <Routes>
+        <Route path="/" >
+          <Route index element={<HomePage />} />
+          <Route path="/tweets" element={<TweetsPage />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Route>
+      </Routes>
     </>
   );
 }
