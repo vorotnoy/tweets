@@ -1,5 +1,23 @@
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tweetsList >li:not(:last-child) {
+  margin-bottom: 15px;
+}
+.load{
+  width: 110px;
+  height: 50px;
+  border-radius: 20px;
+
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #fff;
+  background-color: #471ca9;
+  border: 8px solid #ebd8ff;
+
+  cursor: pointer;
 }

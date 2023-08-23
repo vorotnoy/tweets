@@ -68,13 +68,13 @@
 .followers {
   margin-bottom: 28px;
 }
-.btn_nofollow {
+.btn_nofollow,
+.btn_follow{
   width: 196px;
   height: 50px;
 
   padding: 14px 28px 14px 28p;
   border-radius: 10.310786247253418px;
-  background-color: #ebd8ff;
   border: none;
 
   font-family: Montserrat;
@@ -86,4 +86,10 @@
   text-transform: uppercase;
 
   cursor: pointer;
+}
+.btn_nofollow{
+  background-color: #ebd8ff;
+}
+.btn_follow{
+  background-color: #5CD3A8;
 }

@@ -1,8 +1,8 @@
-import { TweetsList } from "../../components/TweetsList/TweetsList";
+import { TweetsPageWrap } from "../../components/TweetsPage/TweetsPage";
 export const TweetsPage = () => {
   return (
     <>
-      <TweetsList />
+      <TweetsPageWrap />
     </>
   );
 };
