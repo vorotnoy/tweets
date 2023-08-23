@@ -12,7 +12,6 @@ const tweetSlice = createSlice({
         state.tweets = payload;
       })
       .addCase(addFollower.fulfilled, (state, { payload }) => {
-        console.log(payload)
         return {
           tweets: state.tweets.map(item => {
             return item.id !== payload.id ? item : payload;

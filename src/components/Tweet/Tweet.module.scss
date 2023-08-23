@@ -1,3 +1,5 @@
+@import '../../assets/styles/utils/vars';
+
 .wrapper {
   position: relative;
 
@@ -5,7 +7,7 @@
   height: 460px;
   border-radius: 20px;
 
-  background-color: #471ca9;
+  background-color: $tweet-bckgrd;
 
   padding: 28px 0;
 }
@@ -29,7 +31,7 @@
   width: 380px;
   height: 8px;
 
-  background-color: #ebd8ff;
+  background-color: $bckgrd-color;
   box-shadow: 0px -1.7184642553329468px 3.4369285106658936px 0px #ae7be3 inset;
 }
 .circle {
@@ -40,9 +42,9 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 8px solid #ebd8ff;
+  border: 8px solid $bckgrd-color;
 }
-.avatar{
+.avatar {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -53,13 +55,12 @@
 }
 .tweets,
 .followers {
-  font-family: Montserrat;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0em;
 
-  color: #ebd8ff;
+  color: $bckgrd-color;
   text-transform: uppercase;
 }
 .tweets {
@@ -69,7 +70,7 @@
   margin-bottom: 28px;
 }
 .btn_nofollow,
-.btn_follow{
+.btn_follow {
   width: 196px;
   height: 50px;
 
@@ -77,19 +78,26 @@
   border-radius: 10.310786247253418px;
   border: none;
 
-  font-family: Montserrat;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 22px;
   letter-spacing: 0em;
+  color: $btn-color1;
 
   text-transform: uppercase;
 
   cursor: pointer;
 }
-.btn_nofollow{
-  background-color: #ebd8ff;
+.btn_nofollow,
+.btn_follow {
+  &:hover,
+  &:focus{
+    font-size: 20px;
+  }
 }
-.btn_follow{
-  background-color: #5CD3A8;
+.btn_nofollow {
+  background-color: $bckgrd-color;
+}
+.btn_follow {
+  background-color: $btn-color;
 }

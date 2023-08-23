@@ -3,6 +3,7 @@ import { Tweet } from "../Tweet/Tweet";
 import { selectlistTweet } from "../../redux/tweetsSelector";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const TweetsList = () => {
   const itemOnPage = 3;
@@ -16,6 +17,9 @@ export const TweetsList = () => {
 
   return (
     <section className={s.wrapper}>
+      <button type="button" className={s.btn_back}>
+      <Link to="/" className={s.link}>Back</Link>
+      </button>
       <ul className={s.tweetsList}>
         {array &&
           currentArray.map((item) => (
@@ -25,7 +29,7 @@ export const TweetsList = () => {
           ))}
       </ul>
       {array && curPage * itemOnPage < array.length && (
-        <button onClick={loadMore} className={s.load}>
+        <button onClick={loadMore} className={s.btn_load}>
           Load more
         </button>
       )}

@@ -2,10 +2,30 @@
 @import './assets/styles//utils/reset_style';
 @import './assets/styles/utils/vars';
 
-
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: local('Montserrat-Regular'),
+    url('./assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: local('Montserrat-Medium'),
+    url('./assets/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: local('Montserrat-Bold'),
+    url('./assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
 body {
   height: 100vh;
-
-  background-color: #EBD8FF;
+  font-family: 'Montserrat-Regular', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  background-color: $bckgrd-color;
 }
 

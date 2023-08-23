@@ -1,3 +1,5 @@
+@import '../../assets/styles/utils/vars';
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -6,18 +8,35 @@
 .tweetsList >li:not(:last-child) {
   margin-bottom: 15px;
 }
-.load{
-  width: 110px;
-  height: 50px;
-  border-radius: 20px;
-
-  font-family: Montserrat;
+.btn_load, 
+.btn_back{
   font-size: 14px;
-  font-weight: 300;
   line-height: 24px;
-  color: #fff;
-  background-color: #471ca9;
-  border: 8px solid #ebd8ff;
+  text-transform: uppercase;
+  color: $bckgrd-color;
+  background-color: $tweet-bckgrd;
+  border: 8px solid $bckgrd-color;
 
   cursor: pointer;
+}
+.btn_load{
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+}
+.btn_back{
+  width: 80px;
+  height: 50px;
+  border-radius: 15px;
+}
+.link{
+  font-size: 14px;
+  line-height: 24px;
+  color: $bckgrd-color;
+}
+.btn_load:hover{
+  font-size: 15px;
+}
+.btn_back:hover .link{
+  font-size: 15px;
 }

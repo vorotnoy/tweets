@@ -1,5 +1,53 @@
-.wrapper{
-    width: 100%;
-    height: 100%;
+@import '../../assets/styles/utils/vars';
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100dvw;
+  height: 100vh;
+}
+.title {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 24px;
+
+  margin-bottom: 25px;
+
+  color: $title;
+}
+.desc {
+  width: 350px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+
+  margin-bottom: 15px;
+
+  color: $title;
+}
+.button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 15px;
+
+  background-color: $title;
+  cursor: pointer;
+  &:hover,
+  &focus {
+    background-color: $bckgrd-color;
+    border: 2px solid $title;
+  }
+  &:hover .link{
+    color: $title;
+  }
+}
+.link{
+    font-size: 20px;
+    line-height: 24px;
+
+    color: $bckgrd-color;
 }

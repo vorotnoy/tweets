@@ -9,7 +9,6 @@ export const TweetsPageWrap = () => {
 
   useEffect(() => {
     dispatch(getListTweets());
-    console.log('array');
   }, []);
 
 
